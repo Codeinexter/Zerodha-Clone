@@ -1,11 +1,12 @@
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
         <nav class="navbar navbar-expand-lg border-bottom sticky-top" style={{backgroundColor:"#FFF"}}>
         <div class="container p-2">
-            <a class="navbar-brand" href="/">
+            <Link class="navbar-brand" to="/">
                 <img src="media/images/logo.svg" alt="logo" style={{width:"25%"}}/>
-            </a>
+            </Link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -13,19 +14,19 @@ function Navbar() {
                 <form class="d-flex" role="search">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style={{"--bs-scroll-height": "100px"}}>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/">Signup</a>
+                        <Link class="nav-link" aria-current="page" to="/signup">Signup</Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/">About</a>
+                        <Link class="nav-link" aria-current="page" to="/about">About</Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Product</a>
+                        <Link class="nav-link" aria-current="page" to="/products">Product</Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Pricing</a>
+                        <Link class="nav-link" aria-current="page" to="/pricing">Pricing</Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Support</a>
+                        <Link class="nav-link" aria-current="page" to="/support">Support</Link>
                     </li>
                 </ul>
                 </form>
